@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty's Store - Página Protegida por Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="login-container">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required>
+        <button onclick="verificarSenha()">Entrar</button>
+    </div>
+
+    <div class="container" id="conteudo">
+        <h1>Bem-vindo à Pretty's Store!</h1>
+        <table id="tabela">
+            <tr id="linha-numeros">
+                <!-- Os números serão adicionados aqui dinamicamente -->
+            </tr>
+        </table>
+        <button onclick="escolherNumeroAleatorio()">Escolher Número Aleatório</button>
+        <p id="numero-escolhido"></p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <p id="modalNumero"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
